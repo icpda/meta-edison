@@ -1,0 +1,28 @@
+From 6650be7b8d5accdffc6febb1af162f5b3b76efc2 Mon Sep 17 00:00:00 2001
+From: Israel Cepeda <israel4c@gmail.com>
+Date: Mon, 14 Nov 2016 19:12:39 -0800
+Subject: [PATCH] Fix compilation warning as error
+
+Fixing iteration limit.
+
+Signed-off-by: Israel Cepeda <israel4c@gmail.com>
+---
+ arch/x86/lib/interrupts.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/arch/x86/lib/interrupts.c b/arch/x86/lib/interrupts.c
+index 6bb22d2..146ad11 100644
+--- a/arch/x86/lib/interrupts.c
++++ b/arch/x86/lib/interrupts.c
+@@ -130,7 +130,7 @@ int do_irqinfo(cmd_tbl_t *cmdtp, int flag, int argc, char * const argv[])
+ 	printf("Interrupt-Information:\n");
+ 	printf("Nr  Routine   Arg       Count\n");
+ 
+-	for (irq = 0; irq <= CONFIG_SYS_NUM_IRQS; irq++) {
++	for (irq = 0; irq < CONFIG_SYS_NUM_IRQS; irq++) {
+ 		if (irq_handlers[irq].handler != NULL) {
+ 			printf("%02d  %08lx  %08lx  %d\n",
+ 					irq,
+-- 
+2.7.4
+
