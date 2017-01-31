@@ -6,7 +6,8 @@ LIC_FILES_CHKSUM = "file://${WORKDIR}/git/LICENSE;md5=30c8ae0368f724cf5f753d08bf
 
 DEPENDS = "nodejs-native"
 
-SRC_URI = "git://github.com/intel-iot-devkit/iotkit-agent.git;protocol=https;branch=dprelease;tag=prod-v${PV}"
+SRC_URI = "git://github.com/enableiot/iotkit-agent.git;protocol=git"
+SRCREV = "3cc46ac45606cd649645317597a10e20ccf14137"
 
 S = "${WORKDIR}/git"
 
