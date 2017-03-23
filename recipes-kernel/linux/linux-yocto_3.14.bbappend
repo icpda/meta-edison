@@ -1,0 +1,3 @@
+COMPATIBLE_MACHINE = "edison"
+LINUX_VERSION = "3.14.36"
+KBUILD_DEFCONFIG_edison = "i386_defconfig"
