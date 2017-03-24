@@ -16,4 +16,6 @@ SYSLINUX_TIMEOUT ?= "10"
 SYSLINUX_LABELS ?= "boot install"
 LABELS_append = "${SYSLINUX_LABELS}"
 
+IMAGE_INSTALL += "u-boot"
+
 inherit bootimg
