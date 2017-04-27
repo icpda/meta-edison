@@ -3,8 +3,8 @@ LICENSE = "MIT"
 
 PR = "r2"
 
-SRC_URI = "git://github.com/intel-iot-devkit/iotkit-comm-js.git;protocol=git"
-SRCREV = "5ccea56e88755c9f6e3cd37bb5fc5d747b8496aa"
+SRC_URI = "git://github.com/alex-spark/iotkit-comm-js.git;protocol=git"
+SRCREV = "3d78d3cf097dfbbb5a9f554497dec5ba8456a35c"
 
 LIC_FILES_CHKSUM = " \
         file://COPYING;md5=e8db6501ed294e65418a933925d12058 \
